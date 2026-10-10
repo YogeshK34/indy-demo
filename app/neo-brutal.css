@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --background: #F5F5F0;
+  --foreground: #0A0A0A;
+  --primary: #0A0A0A;
+  --primary-foreground: #F5F5F0;
+  --accent: #FFDD00;
+  --accent-foreground: #0A0A0A;
+  --destructive: #FF2D2D;
+  --muted: #E8E8E3;
+  --border: #0A0A0A;
+  --success: #00C853;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.dark {
+  --background: #0A0A0A;
+  --foreground: #F5F5F0;
+  --primary: #0A0A0A;
+  --primary-foreground: #F5F5F0;
+  --accent: #FFDD00;
+  --accent-foreground: #0A0A0A;
+  --destructive: #FF2D2D;
+  --muted: #E8E8E3;
+  --border: #F5F5F0;
+  --success: #00C853;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+/* Brutalist Rules */
+* {
+  border-radius: 0 !important;
+}
+
+/* Override Tailwind rounded classes globally */
+.rounded, .rounded-sm, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-3xl, .rounded-full {
+  border-radius: 0 !important;
+}
